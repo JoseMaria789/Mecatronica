@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 1 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Página principal</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Introduccion a Ing. Mecatrónica</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Tinkerkad Timer 555</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/PORTADA.jpg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">José María || Aldo Yair </div>
+                                <div class="text-muted">Ingenieria Mecatrónica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Agosto 16, 2024</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/web.jpg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">En esta práctica se creara un circuito electrónico basandonos en un esquema de un circuito que prrendera un LED con el uso del timer 555 y armar el circuito.</p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">El timer 555 es un circuito integrado muy popular y versátil que se utiliza en una amplia variedad de aplicaciones electrónicas. Su función principal es generar señales temporizadas o controlar eventos basados en el tiempo, lo que lo convierte en un componente clave en circuitos de temporización, generadores de señales, controladores de pulso, entre otros.</p>
+                        <p class="fs-6 mb-4">El timer cuenta con 8 pines: Vcc(pin8) - GND(Pin 1) - Output(Pin 3) - Tigger(Pin 3) - Threshhold(Pin 6) - Control Voltage(Pin 5) - Discharge(Pin 7) - Rest(Pin 4).</p>
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">-Protoboard </p>
+                        <p class="fs-6 mb-4">-Resistencia 220 ohms </p>
+                        <p class="fs-6 mb-4">-Transistor N </p>
+                        <p class="fs-6 mb-4">-Capacitor </p>
+                        <p class="fs-6 mb-4">-Computadora con programa Tinkerkad </p>
+                        <p class="fs-6 mb-4">-Potenciometro </p>
+                        <p class="fs-6 mb-4">-Dos LEDS</p>
+                        <p class="fs-6 mb-4">-Jumpers </p>
+                        <p class="fs-6 mb-4">-Pila 9V </p>
+                        
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">Para poder reazlizarla practica primero aprendimos acerca de como leer un diagrama de un circuito y poderlo interpretar para identificar los nodos de las conecciones y como hacer las conexiones de cada uno de los componentes de sus respectivos pines. </p>
+                        <p class="fs-6 mb-4">Empezamos con saber cuando debemos ocupar cada uno de los componentes y el porque es importante saber sus pines y el como conectar cada uno de estos.</p>
+                        <p class="fs-6 mb-4">Una vez que conocida la información, procedimos a realizar el diagrama en un simulador para familiarizarnos con el programa y la interpretacion de los esquemas/diagramas de un circuito.</p>
+                        <p class="fs-6 mb-4">Por ultimo realizamos simulaciones en tinkerkad para ver como deberia ir conectado en físico el circuito. Terminando con la conexion física del circuito.</p>
+                            <p id="simulacion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
+                            <p class="fs-6 mb-4">En la simulación realizada en Tinkerkad se podra observar la conexión correcta del timer 555 con el resto de componentes para lograr aumentar/disminuir la intensidad de la luz del LED mediante la manipulación del potenciometro.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/CONEXION_TINKERKAD.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/VIDEO_TIMER555.mp4" type="video/mp4">
+                            </video></p></figure>
+                            
+                            <p id="diseño">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
+                            <p class="fs-6 mb-4">En nuestro diseño en físico se moestrara el mismo diagrama pero con ayuda del protoboard para hacerlo en físico y en este se aprecia menos el circuito por la cantidad de jumpers pero realiza la misma función del circuito digital.</p>
+                            <p class="fs-6 mb-4">Este diseño de circuito se eligio siguiendo la eficacia para conectar los circuitos de este ya que en otros diseños costaba mas trabajo hacer las conexiones de los componentes.</p>
+                            <p id="construccion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
+                            <p class="fs-6 mb-4">1.-Conseguir los componentes a ocupar en el ciruito.</p>
+                            <p class="fs-6 mb-4">2.-Debemos de revisar el diagrama del circuito para revisar las conexiones y hacerla conexión en el protoboard.</p>
+                            <p class="fs-6 mb-4">3.-Una vez visto el diagrama, en el protoboard realizaremos las conecciones de todos los componentes de acuerdo a sus especificaciones.</p>
+                            <p class="fs-6 mb-4">4.-Em pezaremos conectando todos los componentes de la forma mas efectiva para conectar.</p>
+                            <p class="fs-6 mb-4">5.-Para conectar el potenciometro, conectaremos el GND de este al pin Discharger del timer 555 y en ese mismo nodo conectarla a la resistencia 3 de 220 ohms, y el pin output del amplificador ira conectado a la corriente positiva.</p>
+                            <p class="fs-6 mb-4">6.-Luego conectaremos el pin negativo del capacitor a la caraga negativa y el pin positivo se conectara al pin trigger el timer 555.</p>
+                            <p class="fs-6 mb-4">7.-Luego conectaremos el pin colletor del transistor a la resitencia 1 de 220 ohms, el pin base del transistor se conectara a la resistencia 2 de 220 ohms y el pin emisor del transistor ira conectado a la corriente negativa.</p>
+                            <p class="fs-6 mb-4">8.-El pin negativo del led ira a la corriente negativa y el pin positivo del Led ira conectado al pin collector del transistor.</p>
+                            <p class="fs-6 mb-4">9.-Por ultimo terminaremos de conectar los pines restantes del timer 555, conectar el pin trigger a la resistencia 3 de 220 ohms, conectar el pin output del timer 555 a la resistencia 2 de 200 ohms, conectar el GND DEL TIMER 555 a la corriente negativa y el pin CV a la correinte positiva.</p>
+                            <p class="fs-6 mb-4">10,-Conectar al protoboard la pila de 9V conectando los 4 nodos de corritnes a la pila.</p>
+                            
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/DISEÑO_TIMER555.mp4" type="video/mp4">
+                        </video></p></figure>
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">Obtuvimos nuevos conocimientos sobre el uso del sumulador tinkerkad y de las partes que conforman a un circuito, y de como interpretar un diagrama de un circuito.</p>
+                        <p class="fs-6 mb-4">Gracias a la ayuda de los simuladores podemos ahorrarnos mas tiempo en la realizacion de circuitos ya que estos nos facilitarn las conecciones y nos ayudaran a ver mejor el circuito y poder detectar algun error y así poder pasar a hacer el circuito en físico sin ningun error..</p>
+                        
+
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

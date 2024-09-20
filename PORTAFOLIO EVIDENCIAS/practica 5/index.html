@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 5 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Página principal</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Introduccion a Ing. Mecatrónica</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Arduino Básico Salidas Digitales</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/PORTADA.jpg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">José María || Aldo Yair </div>
+                                <div class="text-muted">Ingenieria Mecatrónica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Septiembre 06, 2024</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/SERVO_MOTOR_1.jpg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">En Tinkercad se encontraban los seis circuitos que se iban a realizar con Arduino y servomotores, en los que también se encontraban otros componentes como jumpers, resistencias y luces led. Cada circuito tenía un código diferente en el que se podía ver cómo cambiaban los resultados en los servomotores al girar automáticamente o moverlos por medio de componentes, esto fue para poder diferenciar cada parte de los códigos y cómo cambian los comandos que se usaron y también que componentes se debían usar mientras se cambiaba el código. </p>
+
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">En esa práctica se realizaron 6 circuitos diferentes usando Arduino y servomotores principalmente, esto es para poder ver cómo funciona o se mueve un servomotor dependiendo de cada código y así poder analizar cada componente y al final poder tener una idea más clara.</p>
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales primer circuito -</h2>
+                        <p class="fs-6 mb-4">-Computadora con programa Tinkerkad </p>
+                        <p class="fs-6 mb-4">-ServoMotor</p>
+                        <p class="fs-6 mb-4">-Arduino</p>
+                        <p class="fs-6 mb-4">-Jumpers</p>
+                        
+                        
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo circuito 1</h2>
+                        <p class="fs-6 mb-4">Conectar todos los componenetes adecuadamente.</p>
+                        <p class="fs-6 mb-4">Conectamos el servo motor al protoboar, el GND del servo ira conectada al negativo de la protoboard, el VCC ira conectado al positivo del protoboard y la señal ira conectado al pin9 del arduino.</p>
+                        <p class="fs-6 mb-4">Por ultimo conectamos el negativo de la protoboard al GND del arduino y el positivo d la protoboard al pin de 5V del arduino.</p>
+                        <p class="fs-6 mb-4">Abrimos arduino y creamos este codigo:</p>
+                        <p class="fs-6 mb-4">// C++ code //</p>
+                        <p class="fs-6 mb-4">#include(Servo.h) </Servo.h></p>
+                        <p class="fs-6 mb-4">Servo servoMotor;</p>
+                        <p class="fs-6 mb-4">void setup() </p>
+                        <p class="fs-6 mb-4">{</p>
+                        <p class="fs-6 mb-4">servoMotor.attach(9);</p>
+                        <p class="fs-6 mb-4">}</p>
+                            
+                        <p class="fs-6 mb-4">void loop()</p>
+                        <p class="fs-6 mb-4">{</p>
+                        <p class="fs-6 mb-4">servoMotor.write(90);</p>
+                        <p class="fs-6 mb-4">}</p> 
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/IMAGEN1_SERVO1.jpeg" alt="..." /></figure>
+
+
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo circuito 2</h2>
+                            <p class="fs-6 mb-4">Conectar todos los componenetes adecuadamente.</p>
+                            <p class="fs-6 mb-4">Conectamos el servo motor al protoboar, el GND del servo ira conectada al negativo de la protoboard, el VCC ira conectado al positivo del protoboard y la señal ira conectado al pin9 del arduino.</p>
+                            <p class="fs-6 mb-4">Por ultimo conectamos el negativo de la protoboard al GND del arduino y el positivo d la protoboard al pin de 5V del arduino.</p>
+                            <p class="fs-6 mb-4">Abrimos arduino y creamos este codigo:</p>
+                            <p class="fs-6 mb-4">// C++ code //</p>
+                            <p class="fs-6 mb-4">#include(Servo.h) </Servo.h></p>
+                            <p class="fs-6 mb-4">Servo servoMotor;</p>
+
+                            <p class="fs-6 mb-4">void setup() </p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">servoMotor.attach(9);</p>
+                            <p class="fs-6 mb-4">}</p>
+                                
+                            <p class="fs-6 mb-4">void loop()</p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">servoMotor.write(0);</p>
+                            <p class="fs-6 mb-4">dealy(1000);</p>
+                            <p class="fs-6 mb-4">servoMotor.write(90);</p>
+                            <p class="fs-6 mb-4">dealy(1000);</p>
+                            <p class="fs-6 mb-4">servoMotor.write(180);</p>
+                            <p class="fs-6 mb-4">dealy(1000);</p>
+                            <p class="fs-6 mb-4">}</p> 
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/IMAGEN2_SERVO2.jpeg" alt="..." /></figure>
+
+
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo circuito 3</h2>
+                            <p class="fs-6 mb-4">Conectar todos los componenetes adecuadamente.</p>
+                            <p class="fs-6 mb-4">Conectamos el servo motor al protoboar, el GND del servo ira conectada al negativo de la protoboard, el VCC ira conectado al positivo del protoboard y la señal ira conectado al pin9 del arduino.</p>
+                            <p class="fs-6 mb-4">Conectamos el servo motor al protoboar, el GND del servo ira conectada al negativo de la protoboard, el VCC ira conectado al positivo del protoboard y la señal ira conectado al pin2 del arduino.</p>
+                            <p class="fs-6 mb-4">Conectamos el potenciometro, conectamos el GND del potenciometro al negativo de lo protoboard, conectamos el vcc al positivo de la protoboard y por ultimo conectamos el OUTPUT del potenciometro al pinA0 del arduino.</p>
+                            <p class="fs-6 mb-4">Por ultimo conectamos el negativo de la protoboard al GND del arduino y el positivo d la protoboard al pin de 5V del arduino.</p>
+                            <p class="fs-6 mb-4">Abrimos arduino y creamos este codigo:</p>
+                            <p class="fs-6 mb-4">// C++ code //</p>
+                            <p class="fs-6 mb-4">#include(Servo.h) </Servo.h></p>
+                            <p class="fs-6 mb-4">Servo servoMotor;</p>
+                            <p class="fs-6 mb-4">int valor;</p>
+                            <p class="fs-6 mb-4">int pos;</p>
+
+                            <p class="fs-6 mb-4">void setup() </p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">servoMotor.attach(9);</p>
+                            <p class="fs-6 mb-4">}</p>
+                                
+                            <p class="fs-6 mb-4">void loop()</p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">valor = analogRead(A0);</p>
+                            <p class="fs-6 mb-4">pos = map(valor, 0, 1023, 0, 180);</p>
+                            <p class="fs-6 mb-4">servoMotor.write(pos);</p>
+                            <p class="fs-6 mb-4">dealy(1000);</p>
+                            <p class="fs-6 mb-4">}</p> 
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/IMAGEN3_SERVO3.jpeg" alt="..." /></figure>
+
+
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo circuito 4</h2>
+                            <p class="fs-6 mb-4">Conectar todos los componenetes adecuadamente.</p>
+                            <p class="fs-6 mb-4">Conectamos el servo motor al protoboar, el GND del servo ira conectada al negativo de la protoboard, el VCC ira conectado al positivo del protoboard y la señal ira conectado al pin9 del arduino.</p>
+                            <p class="fs-6 mb-4">Conectamos el potenciometro, conectamos el GND del potenciometro al negativo de lo protoboard, conectamos el vcc al positivo de la protoboard y por ultimo conectamos el OUTPUT del potenciometro al pinA0 del arduino.</p>
+                            <p class="fs-6 mb-4">Por ultimo conectamos el negativo de la protoboard al GND del arduino y el positivo d la protoboard al pin de 5V del arduino.</p>
+                            <p class="fs-6 mb-4">Abrimos arduino y creamos este codigo:</p>
+                            <p class="fs-6 mb-4">// C++ code //</p>
+                            <p class="fs-6 mb-4">#include(Servo.h) </Servo.h></p>
+                            <p class="fs-6 mb-4">Servo myservo1;</p>
+                            <p class="fs-6 mb-4">Servo myservo2;</p>
+                            <p class="fs-6 mb-4">int valor;</p>
+                            <p class="fs-6 mb-4">int pos;</p>
+
+                            <p class="fs-6 mb-4">void setup() </p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">myservo1.attach(9);</p>
+                            <p class="fs-6 mb-4">myservo2.attach(2);</p>
+                            <p class="fs-6 mb-4">}</p>
+                                
+                            <p class="fs-6 mb-4">void loop()</p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">valor = analogRead(A0);</p>
+                            <p class="fs-6 mb-4">pos = map(valor, 0, 1023, 0, 180);</p>
+                            <p class="fs-6 mb-4">myservo1.write(pos);</p>
+                            <p class="fs-6 mb-4">myservo2.write(pos);</p>
+                            <p class="fs-6 mb-4">dealy(10);</p>
+                            <p class="fs-6 mb-4">}</p> 
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/IMAGEN4_SERVO4.jpeg" alt="..." /></figure>
+
+
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo circuito 5</h2>
+                            <p class="fs-6 mb-4">Conectar todos los componenetes adecuadamente.</p>
+                            <p class="fs-6 mb-4">Conectamos el servo motor al protoboar, el GND del servo ira conectada al negativo de la protoboard, el VCC ira conectado al positivo del protoboard y la señal ira conectado al pin9 del arduino.</p>
+                            <p class="fs-6 mb-4">Conectamos el potenciometro1, conectamos el GND del potenciometro al negativo de lo protoboard, conectamos el vcc al positivo de la protoboard y por ultimo conectamos el OUTPUT del potenciometro al pinA0 del arduino.</p>
+                            <p class="fs-6 mb-4">Conectamos el potenciometro2, conectamos el GND del potenciometro al negativo de lo protoboard, conectamos el vcc al positivo de la protoboard y por ultimo conectamos el OUTPUT del potenciometro al pinA1 del arduino.</p>
+                            <p class="fs-6 mb-4">Por ultimo conectamos el negativo de la protoboard al GND del arduino y el positivo d la protoboard al pin de 5V del arduino.</p>
+                            <p class="fs-6 mb-4">Abrimos arduino y creamos este codigo:</p>
+                            <p class="fs-6 mb-4">// C++ code //</p>
+                            <p class="fs-6 mb-4">#include(Servo.h) </Servo.h></p>
+                            <p class="fs-6 mb-4">Servo myservo1;</p>
+                            <p class="fs-6 mb-4">Servo myservo2;</p>
+                            <p class="fs-6 mb-4">int valor1;</p>
+                            <p class="fs-6 mb-4">int valor2;</p>
+                            <p class="fs-6 mb-4">int pos1;</p>
+                            <p class="fs-6 mb-4">int pos2;</p>
+
+                            <p class="fs-6 mb-4">void setup() </p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">myservo1.attach(9);</p>
+                            <p class="fs-6 mb-4">myservo2.attach(2);</p>
+                            <p class="fs-6 mb-4">}</p>
+                                
+                            <p class="fs-6 mb-4">void loop()</p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">valor1 = analogRead(A0);</p>
+                            <p class="fs-6 mb-4">valor2 = analogRead(A1);</p>
+                            <p class="fs-6 mb-4">pos1 = map(valor, 0, 1023, 0, 180);</p>
+                            <p class="fs-6 mb-4">pos2 = map(valor, 0, 1023, 0, 180);</p>
+                            <p class="fs-6 mb-4">myservo1.write(pos1);</p>
+                            <p class="fs-6 mb-4">myservo2.write(pos2);</p>
+                            <p class="fs-6 mb-4">dealy(10);</p>
+                            <p class="fs-6 mb-4">}</p> 
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/IMAGEN5_SERVO5.jpeg" alt="..." /></figure>
+
+
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo circuito 5</h2>
+                            <p class="fs-6 mb-4">Conectar todos los componenetes adecuadamente.</p>
+                            <p class="fs-6 mb-4">Conectamos el servo motor al protoboar, el GND del servo ira conectada al negativo de la protoboard, el VCC ira conectado al positivo del protoboard y la señal ira conectado al pin9 del arduino.</p>
+                            <p class="fs-6 mb-4">Conectamos el potenciometro, conectamos el GND del potenciometro al negativo de lo protoboard, conectamos el vcc al positivo de la protoboard y por ultimo conectamos el OUTPUT del potenciometro al pinA0 del arduino.</p>
+                            <p class="fs-6 mb-4">Por ultimo conectamos el negativo de la protoboard al GND del arduino y el positivo d la protoboard al pin de 5V del arduino.</p>
+                            <p class="fs-6 mb-4">Abrimos arduino y creamos este codigo:</p>
+                            <p class="fs-6 mb-4">// C++ code //</p>
+                            <p class="fs-6 mb-4">#include(Servo.h) </Servo.h></p>
+                            <p class="fs-6 mb-4">Servo myservo1;</p>
+                            <p class="fs-6 mb-4">Servo myservo2;</p>
+                            <p class="fs-6 mb-4">int valor;</p>
+                            <p class="fs-6 mb-4">int pos;</p>
+
+                            <p class="fs-6 mb-4">void setup() </p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">myservo1.attach(9);</p>
+                            <p class="fs-6 mb-4">myservo2.attach(2);</p>
+                            <p class="fs-6 mb-4">}</p>
+                                
+                            <p class="fs-6 mb-4">void loop()</p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">valor = analogRead(A0);</p>
+                            <p class="fs-6 mb-4">pos = map(valor, 0, 1023, 0, 180);</p>
+                            <p class="fs-6 mb-4">myservo1.write(pos);</p>
+                            <p class="fs-6 mb-4">myservo2.write(pos);</p>
+                            <p class="fs-6 mb-4">dealy(10);</p>
+                            <p class="fs-6 mb-4">}</p> 
+ 
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/IMAGEN6_SERVO6.jpeg" alt="..." /></figure>
+
+
+
+
+                            <p id="simulacion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación circuito 1</h1>
+                            <p class="fs-6 mb-4">En la simulación el servoMotor realizara un giro de 90° al compilar el programa.</p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/VIDEO1_SERVO1.mp4" type="video/mp4">
+                            </video></p></figure>
+
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación circuito 2</h1>
+                            <p class="fs-6 mb-4">En la simulación el servoMotor va a regresar a la posici+on original en 0° y despues realizara dos giros, uno de 90° y otro de 180° al compilar el programa.</p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/VIDEO2_SERVO2.mp4" type="video/mp4">
+                            </video></p></figure>
+
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación circuito 3</h1>
+                            <p class="fs-6 mb-4">En la simulacion el servoMotor solo girara cuando movamos el potenciometro a los grados que queramos.</p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/VIDEO3_SERVO3.mp4" type="video/mp4">
+                            </video></p></figure>
+
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación circuito 4</h1>
+                            <p class="fs-6 mb-4">En la simulación el servoMotro1 y el servoMotor2 giraran cuando movamos el potenciometro a los grados que queramos..</p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/VIDEO4_SERVO4.mp4" type="video/mp4">
+                            </video></p></figure>
+
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación circuito 5</h1>
+                            <p class="fs-6 mb-4">En la simulación se podran mover cada servoMotor individualmente con su propio potenciometro..</p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/VIDEO5_SERVO5.mp4" type="video/mp4">
+                            </video></p></figure>
+
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación circuito 6</h1>
+                            <p class="fs-6 mb-4">En la simulación el servoMotor se movera con el giro del potenciometro, pero, en este caso, alimentaremos al servo con una power sully en 5V</p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/VIDEO6_SERVO6.mp4" type="video/mp4">
+                            </video></p></figure>
+                            
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados circuito 1</h2>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/RESULTADO1.mp4" type="video/mp4">
+                        </video></p></figure>
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados circuito 2</h2>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/RESULTADO2.mp4" type="video/mp4">
+                        </video></p></figure>
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados circuito 3</h2>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/RESULTADO3.mp4" type="video/mp4">
+                        </video></p></figure>
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados circuito 4</h2>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/RESULTADO4.mp4" type="video/mp4">
+                        </video></p></figure>
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados circuito 5</h2>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/RESULTADO5.mp4" type="video/mp4">
+                        </video></p></figure>
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados circuito 5</h2>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/RESULTADO6.mp4" type="video/mp4">
+                        </video></p></figure>
+        
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">Esta práctica sirvió para saber cómo funcionan los servomotores y cómo es que podemos decir que hacer dependiendo de cada código que se crea, esto es para tener una mejor idea de cómo funcionan los componentes y que puede pasar dependiendo del código que queramos armar. Esto también sirvió para poder tener más práctica en el momento de armar un circuito y así poder hacerlo sin menos errores cada vez.</p>
+                        
+                        
+
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

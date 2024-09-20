@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 1 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Página principal</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Introduccion a Ing. Mecatrónica</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Arduino Básico Entradas Digitales</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/PORTADA.jpg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">José María || Aldo Yair </div>
+                                <div class="text-muted">Ingenieria Mecatrónica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Agosto 30, 2024</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/ARDUIO_PORTADA.jpg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">En la aplicación de Tinkercad se encontraban circuitos con distintos componentes en los que usábamos señales de voltaje con el objetivo de prender una luz led, esto fue con cada circuito, sin embargo cada uno tenía un código diferente para poder probar y diferenciar lo que puede hacer cada circuito y cada código y así aprender las diferentes acciones que se pueden hacer. Cada circuito tenía distintos elementos para armarlos en físico, lo que llevó a diferenciar cada uno de ellos y tener un mejor orden, en algunos circuitos las luces led prendían con oprimir un botón, en algunos códigos cada luz led tenía su propia señal.</p>
+
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">En esta práctica se realizarán distintos circuitos con Arduino pero con la diferencia de tener entradas digitales, lo que conlleva a que el Arduino va a recibir señales de voltaje con distintos y prender las luces led con un simple comando al poder decidir cuando prende.</p>
+                        
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales primer circuito -</h2>
+                        <p class="fs-6 mb-4">-Computadora con programa Tinkerkad </p>
+                        <p class="fs-6 mb-4">-LED Rojo</p>
+                        <p class="fs-6 mb-4">-Arduino</p>
+                        <p class="fs-6 mb-4">-Pulsador</p>
+                        <p class="fs-6 mb-4">-Resistencias de 220 ohms</p>
+                        <p class="fs-6 mb-4">-Resistencias de 1k ohms</p> 
+                        <p class="fs-6 mb-4">-Protoboard</p>  
+                        <p class="fs-6 mb-4">-Jumpers</p> 
+
+                                          
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo circuito 1</h2>
+                        <p class="fs-6 mb-4">Se conectaran todos los componentes al protoboard y al arduino.</p>
+                        <p class="fs-6 mb-4">Conectaremos el led a una resistencia1 de 220 ohms y conectaremos el mismo led al negativo de la protoboard, despues la resistencia1 de 220 ohms se conectara al pin13 del arduino.</p>
+                        <p class="fs-6 mb-4">Se conectara el pulsador a la resistencia2 de 220 ohms y al positivo de la protoboard, en el mismo nodo de la resistencia 2 y el pulsador, lo conectaremos al pin8 del arduio.</p>
+                        <p class="fs-6 mb-4">Por utlimo, conectaremos el negativo de la protoboard al GND del arduino y la corriente positiva de la protoboard la conectaremos al pin de 5V del arduino.</p>
+                        <p class="fs-6 mb-4">Abrimos arduino y creamos este codigo:</p>
+                        <p class="fs-6 mb-4">// C++ code //</p>
+                        <p class="fs-6 mb-4">void setup() </p>
+                        <p class="fs-6 mb-4">{</p>
+                        <p class="fs-6 mb-4">pinMode(13, OUTPUT);</p>
+                        <p class="fs-6 mb-4">pinMode(8, INPUT);</p>
+                        <p class="fs-6 mb-4">}</p>
+                            
+                        <p class="fs-6 mb-4">void loop()</p>
+                        <p class="fs-6 mb-4">{</p>
+                        <p class="fs-6 mb-4">digitalWrite(13, digitalRead(8));</p>
+                        <p class="fs-6 mb-4">}</p> 
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/IMAGEN1_CIRCU1.jpeg" alt="..." /></figure>
+
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo circuito 2</h2>
+                        <p class="fs-6 mb-4">Se conectaran todos los componentes al protoboard y al arduino.</p>
+                        <p class="fs-6 mb-4">Conectaremos el led1 a la corriente negativa de la protoboard y tambein conectaremos el led1 a la resistencia1 de 220 ohms y la ressitencia1 se conectara al pin13 del arduino.</p>
+                        <p class="fs-6 mb-4">Conectaremos el led2 a la corriente negativa de la protoboard y tambein conectaremos el led2 a la resistencia2 de 220 ohms y la ressitencia1 se conectara al pin11 del arduino.</p>
+                        <p class="fs-6 mb-4">Ahora conectaremos el pulsor1 al positivo de la protoboard y al pint13 del arduino y en ese mismo nodo conectaremos la resistencia 1 de un 1k ohms, esta misma resistencia 1 la conectaremos a la corriente negativa de la protoboard.</p> 
+                        <p class="fs-6 mb-4">Ahora conectaremos el pulsor2 al positivo de la protoboard y al pint2 del arduino y en ese mismo nodo conectaremos la resistencia 1 de un 1k ohms, esta misma resistencia 1 la conectaremos a la corriente negativa de la protoboard.</p>
+                        <p class="fs-6 mb-4">Por utlimo, conectaremos el negativo de la protoboard al GND del arduino y la corriente positiva de la protoboard la conectaremos al pin de 5V del arduino.</p>
+                        <p class="fs-6 mb-4">Abrimos arduino y creamos este codigo:</p>
+                        <p class="fs-6 mb-4">// C++ code //</p>
+                        <p class="fs-6 mb-4">void setup() </p>
+                        <p class="fs-6 mb-4">{</p>
+                        <p class="fs-6 mb-4">pinMode(13, OUTPUT);</p>
+                        <p class="fs-6 mb-4">pinMode(8, INPUT);</p>
+                        <p class="fs-6 mb-4">pinMode(11, OUTPUT);</p>
+                        <p class="fs-6 mb-4">pinMode(2, INPUT);</p>
+                        <p class="fs-6 mb-4">}</p>
+                            
+                        <p class="fs-6 mb-4">void loop()</p>
+                        <p class="fs-6 mb-4">{</p>
+                        <p class="fs-6 mb-4">digitalWrite(13, digitalRead(8));</p>
+                        <p class="fs-6 mb-4">digitalWrite(11, digitalRead(2);</p>
+                        <p class="fs-6 mb-4">}</p> 
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/IMAGEN2_CIRCU2.jpeg" alt="..." /></figure>
+
+
+                        <p id="desarrollo">
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo circuito 3</h2>
+                            <p class="fs-6 mb-4">Se conectaran todos los componentes al protoboard y al arduino.</p>
+                            <p class="fs-6 mb-4">Conectaremos el led a una resistencia1 de 220 ohms y conectaremos el mismo led al negativo de la protoboard, despues la resistencia1 de 220 ohms se conectara al pin13 del arduino.</p>
+                            <p class="fs-6 mb-4">Se conectara el pulsador a la resistencia2 de 220 ohms y al positivo de la protoboard, en el mismo nodo de la resistencia 2 y el pulsador, lo conectaremos al pin8 del arduio.</p>
+                            <p class="fs-6 mb-4">Por utlimo, conectaremos el negativo de la protoboard al GND del arduino y la corriente positiva de la protoboard la conectaremos al pin de 5V del arduino.</p>
+                            <p class="fs-6 mb-4">Abrimos arduino y creamos este codigo:</p>
+                            <p class="fs-6 mb-4">// C++ code //</p>
+                            <p class="fs-6 mb-4">void setup() </p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">pinMode(13, OUTPUT);</p>
+                            <p class="fs-6 mb-4">pinMode(8, INPUT);</p>
+                            <p class="fs-6 mb-4">}</p>
+                                
+                            <p class="fs-6 mb-4">void loop()</p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">if (digitalRead(8) == HIGH);</p>
+                            <p class="fs-6 mb-4">digitalWrite(13, HIGH);</p>
+                            <p class="fs-6 mb-4">if (digitalRead(8) == LOW);</p>
+                            <p class="fs-6 mb-4">digitalWrite(13, LOW);</p>
+                            <p class="fs-6 mb-4">}</p> 
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/IMAGEN1_CIRCU1.jpeg" alt="..." /></figure>
+
+
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo circuito 4</h2>
+                        <p class="fs-6 mb-4">Se conectaran todos los componentes al protoboard y al arduino.</p>
+                        <p class="fs-6 mb-4">Conectaremos el led1 a la corriente negativa de la protoboard y tambein conectaremos el led1 a la resistencia1 de 220 ohms y la ressitencia1 se conectara al pin13 del arduino.</p>
+                        <p class="fs-6 mb-4">Conectaremos el led2 a la corriente negativa de la protoboard y tambein conectaremos el led2 a la resistencia2 de 220 ohms y la ressitencia1 se conectara al pin11 del arduino.</p>
+                        <p class="fs-6 mb-4">Ahora conectaremos el pulsor1 al positivo de la protoboard y al pint13 del arduino y en ese mismo nodo conectaremos la resistencia 1 de un 1k ohms, esta misma resistencia 1 la conectaremos a la corriente negativa de la protoboard.</p> 
+                        <p class="fs-6 mb-4">Ahora conectaremos el pulsor2 al positivo de la protoboard y al pint2 del arduino y en ese mismo nodo conectaremos la resistencia 1 de un 1k ohms, esta misma resistencia 1 la conectaremos a la corriente negativa de la protoboard.</p>
+                        <p class="fs-6 mb-4">Por utlimo, conectaremos el negativo de la protoboard al GND del arduino y la corriente positiva de la protoboard la conectaremos al pin de 5V del arduino.</p>
+                        <p class="fs-6 mb-4">Abrimos arduino y creamos este codigo:</p>
+                        <p class="fs-6 mb-4">// C++ code //</p>
+                        <p class="fs-6 mb-4">void setup() </p>
+                        <p class="fs-6 mb-4">{</p>
+                        <p class="fs-6 mb-4">pinMode(13, OUTPUT);</p>
+                        <p class="fs-6 mb-4">pinMode(8, INPUT);</p>
+                        <p class="fs-6 mb-4">pinMode(11, OUTPUT);</p>
+                        <p class="fs-6 mb-4">pinMode(2, INPUT);</p>
+                        <p class="fs-6 mb-4">}</p>
+
+                        <p class="fs-6 mb-4">void loop()</p>
+                        <p class="fs-6 mb-4">{</p>
+                        <p class="fs-6 mb-4">if (digitalRead(8) == HIGH);</p>
+                        <p class="fs-6 mb-4">{</p>
+                        <p class="fs-6 mb-4">digitalWrite(13, HIGH);</p>
+                        <p class="fs-6 mb-4">}</p>
+                        <p class="fs-6 mb-4">else if (digitalRead(8) == LOW);</p>
+                        <p class="fs-6 mb-4">{</p>
+                        <p class="fs-6 mb-4">digitalWrite(13, LOW);</p>
+                        <p class="fs-6 mb-4">}</p> 
+
+                        <p class="fs-6 mb-4">if (digitalRead(2) == HIGH);</p>
+                        <p class="fs-6 mb-4">{</p>
+                        <p class="fs-6 mb-4">digitalWrite(11, HIGH);</p>
+                        <p class="fs-6 mb-4">}</p>
+                        <p class="fs-6 mb-4">else if (digitalRead(2) == LOW);</p>
+                        <p class="fs-6 mb-4">{</p>
+                        <p class="fs-6 mb-4">digitalWrite(11, LOW);</p>
+                        <p class="fs-6 mb-4">}</p> 
+                        <p class="fs-6 mb-4">}</p> 
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/IMAGEN2_CIRCU2.jpeg" alt="..." /></figure>
+
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo circuito 5</h2>
+                        <p class="fs-6 mb-4">Se conectaran todos los componentes al protoboard y al arduino.</p>
+                        <p class="fs-6 mb-4">Conectaremos el led1 a la corriente negativa de la protoboard y la conectaremos a la resistencia1 de 220 ohms la cual se conectara al pin13.</p>
+                        <p class="fs-6 mb-4">Conectaremos el led2 a la corriente negativa de la protoboard y la conectaremos a la resistencia2 de 220 ohms la cual se conectara al pin12.</p>
+                        <p class="fs-6 mb-4">Conectaremos el led3 a la corriente negativa de la protoboard y la conectaremos a la resistencia3 de 220 ohms la cual se conectara al pin11.</p>
+                        <p class="fs-6 mb-4">Conectaremos el led4 a la corriente negativa de la protoboard y la conectaremos a la resistencia4 de 220 ohms la cual se conectara al pin10.</p>
+                        <p class="fs-6 mb-4">Se conectara el pulsador al positivo de la protoboard y la resistencia de 1k ohms y en ese mismo nodo seconectara al pin2 del arduino.</p>
+                        <p class="fs-6 mb-4">Por utlimo, conectaremos el negativo de la protoboard al GND del arduino y la corriente positiva de la protoboard la conectaremos al pin de 5V del arduino.</p>
+                        <p class="fs-6 mb-4">Abrimos arduino y creamos este codigo:</p>
+                        <p class="fs-6 mb-4">// C++ code //</p>
+                        <p class="fs-6 mb-4">void setup() </p>
+                        <p class="fs-6 mb-4">{</p>
+                        <p class="fs-6 mb-4">pinMode(13, OUTPUT);</p>
+                        <p class="fs-6 mb-4">pinMode(12, OUTPU);</p>
+                        <p class="fs-6 mb-4">pinMode(11, OUTPUT);</p>
+                        <p class="fs-6 mb-4">pinMode(10, OUTPUT);</p>
+                        <p class="fs-6 mb-4">pinMode(2, INPUT);</p>
+                        <p class="fs-6 mb-4">}</p>
+                            
+                        <p class="fs-6 mb-4">void loop()</p>
+                        <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">if (digitalRead(2) == HIGH);</p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">cuenta++;</p>
+                            <p class="fs-6 mb-4">delay(500);</p>
+                            <p class="fs-6 mb-4">}</p>
+
+                            <p class="fs-6 mb-4">if (cuenta>= 5);</p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">cuenta =0;</p>
+                            <p class="fs-6 mb-4">}</p> 
+    
+                            <p class="fs-6 mb-4">if (cuenta == 0);</p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">digitalWrite(13, LOW);</p>
+                            <p class="fs-6 mb-4">digitalWrite(12, LOW);</p>
+                            <p class="fs-6 mb-4">digitalWrite(11, LOW);</p>
+                            <p class="fs-6 mb-4">digitalWrite(10, LOW);</p>
+                            <p class="fs-6 mb-4">}</p>
+                            
+                            <p class="fs-6 mb-4">else if(cuenta == 1);</p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">digitalWrite(13, HIGH);</p>
+                            <p class="fs-6 mb-4">digitalWrite(12, LOW);</p>
+                            <p class="fs-6 mb-4">digitalWrite(11, LOW);</p>
+                            <p class="fs-6 mb-4">digitalWrite(10, LOW);</p>
+                            <p class="fs-6 mb-4">}</p> 
+
+                            <p class="fs-6 mb-4">else if(cuenta == 2);</p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">digitalWrite(13, HIGH);</p>
+                            <p class="fs-6 mb-4">digitalWrite(12, HIGH);</p>
+                            <p class="fs-6 mb-4">digitalWrite(11, LOW);</p>
+                            <p class="fs-6 mb-4">digitalWrite(10, LOW);</p>
+                            <p class="fs-6 mb-4">}</p> 
+
+                            <p class="fs-6 mb-4">else if(cuenta == 3);</p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">digitalWrite(13, HIGH);</p>
+                            <p class="fs-6 mb-4">digitalWrite(12, HIGH);</p>
+                            <p class="fs-6 mb-4">digitalWrite(11, HIGH);</p>
+                            <p class="fs-6 mb-4">digitalWrite(10, LOW);</p>
+                            <p class="fs-6 mb-4">}</p> 
+
+                            <p class="fs-6 mb-4">else if(cuenta == 3);</p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">digitalWrite(13, HIGH);</p>
+                            <p class="fs-6 mb-4">digitalWrite(12, HIGH);</p>
+                            <p class="fs-6 mb-4">digitalWrite(11, HIGH);</p>
+                            <p class="fs-6 mb-4">digitalWrite(10, HIGH);</p>
+                            <p class="fs-6 mb-4">}</p> 
+                        <p class="fs-6 mb-4">}</p> 
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/IMAGEN5_CIRCU5.jpeg" alt="..." /></figure>
+
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo circuito 6</h2>
+                            <p class="fs-6 mb-4">Se conectaran todos los componentes al protoboard y al arduino.</p>
+                            <p class="fs-6 mb-4">Conectaremos el led al negativo de la protoboard y a la ressitencia de 220 ohms, esta resistencia se conectara al pin13 del arduino.</p>
+                            <p class="fs-6 mb-4">Conectaremos el pulsador1 al positivo de la protoboard y a la resistencia1 de 1K ohms, en este mismo nodo lo conectaremos al pin8.</p>
+                            <p class="fs-6 mb-4">Conectaremos el pulsador2 al positivo de la protoboard y a la resistencia2 de 1K ohms, en este mismo nodo lo conectaremos al pin2.</p>
+                            <p class="fs-6 mb-4">Por utlimo, conectaremos el negativo de la protoboard al GND del arduino y la corriente positiva de la protoboard la conectaremos al pin de 5V del arduino.</p>
+                            <p class="fs-6 mb-4">Abrimos arduino y creamos este codigo:</p>
+                            <p class="fs-6 mb-4">// C++ code //</p>
+                            <p class="fs-6 mb-4">void setup() </p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">pinMode(13, OUTPUT);</p>
+                            <p class="fs-6 mb-4">pinMode(8, INPUT);</p>
+                            <p class="fs-6 mb-4">pinMode(2, INPUT);</p>
+                            <p class="fs-6 mb-4">}</p>
+                                
+                            <p class="fs-6 mb-4">void loop()</p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">if (digitalRead(8) == HIGH)||(digitalRead(2) == HIGH);</p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">digitalWrite(13, HIGH);</p>
+                            <p class="fs-6 mb-4">}</p> 
+                            <p class="fs-6 mb-4">else </p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">digitalWrite(13, LOW);</p>
+                            <p class="fs-6 mb-4">}</p> 
+                            <p class="fs-6 mb-4">}</p> 
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/IMAGEN6_CIRCU6.jpeg" alt="..." /></figure>
+
+
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo circuito 7</h2>
+                            <p class="fs-6 mb-4">Se conectaran todos los componentes al protoboard y al arduino.</p>
+                            <p class="fs-6 mb-4">Conectaremos el led al negativo de la protoboard y a la ressitencia de 220 ohms, esta resistencia se conectara al pin13 del arduino.</p>
+                            <p class="fs-6 mb-4">Conectaremos el pulsador1 al positivo de la protoboard y a la resistencia1 de 1K ohms, en este mismo nodo lo conectaremos al pin8.</p>
+                            <p class="fs-6 mb-4">Conectaremos el pulsador2 al positivo de la protoboard y a la resistencia2 de 1K ohms, en este mismo nodo lo conectaremos al pin2.</p>
+                            <p class="fs-6 mb-4">Por utlimo, conectaremos el negativo de la protoboard al GND del arduino y la corriente positiva de la protoboard la conectaremos al pin de 5V del arduino.</p>
+                            <p class="fs-6 mb-4">Abrimos arduino y creamos este codigo:</p>
+                            <p class="fs-6 mb-4">// C++ code //</p>
+                            <p class="fs-6 mb-4">void setup() </p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">pinMode(13, OUTPUT);</p>
+                            <p class="fs-6 mb-4">pinMode(8, INPUT);</p>
+                            <p class="fs-6 mb-4">pinMode(2, INPUT);</p>
+                            <p class="fs-6 mb-4">}</p>
+                                
+                            <p class="fs-6 mb-4">void loop()</p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">if (digitalRead(8) == HIGH)&&(digitalRead(2) == HIGH);</p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">digitalWrite(13, HIGH);</p>
+                            <p class="fs-6 mb-4">}</p> 
+                            <p class="fs-6 mb-4">else </p>
+                            <p class="fs-6 mb-4">{</p>
+                            <p class="fs-6 mb-4">digitalWrite(13, LOW);</p>
+                            <p class="fs-6 mb-4">}</p> 
+                            <p class="fs-6 mb-4">}</p> 
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/IMAGEN6_CIRCU6.jpeg" alt="..." /></figure>
+
+                            <p id="simulacion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación circuito 1</h1>
+                            <p class="fs-6 mb-4">En esta simulacion podremos activar/encender el LED cada que pulsemo el pulsador. En este circuito, lo que cambia es el codigo ya que estamos condicionando al circuito.</p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/VIDEO1_CIRCU1.mp4" type="video/mp4">
+                            </video></p></figure>
+
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación circuito 2</h1>
+                            <p class="fs-6 mb-4">En esta simulación podremos activar/encender el led1 pulsando el pulsor1 y podremos activar/encender el eld2 pulsando el pulsor2.</p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/VIDEO2_CIRCU2.mp4" type="video/mp4">
+                            </video></p></figure>
+
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación circuito 3</h1>
+                            <p class="fs-6 mb-4">En esta simulacion podremos activar/encender el LED cada que pulsemo el pulsador. En este circuito, lo que cambia es el codigo ya que estamos condicionando al circuito.</p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/VIDEO1_CIRCU1.mp4" type="video/mp4">
+                            </video></p></figure>
+
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación circuito 4</h1>
+                            <p class="fs-6 mb-4">En esta simulación podremos activar/encender el led1 pulsando el pulsor1 y podremos activar/encender el eld2 pulsando el pulsor2. Lo que cambia en este circuito es el código el cual ahora condiciona al circuito</p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/VIDEO2_CIRCU2.mp4" type="video/mp4">
+                                </video></p></figure>
+    
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación circuito 5</h1>
+                            <p class="fs-6 mb-4">En esta simulación podremos encender un led con el pulsador y estos se mantendran encendidos hasta volver a tocar su pulsador.</p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/VIDEO5_CIRCU5.mp4" type="video/mp4">
+                            </video></p></figure>
+
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación circuito 6</h1>
+                            <p class="fs-6 mb-4">En esta simulación podremos encender el led pulsando cualquiera de los dos pulsores..</p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/VIDEO6_CIRCU6.mp4" type="video/mp4">
+                            </video></p></figure>
+
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación circuito 7</h1>
+                            <p class="fs-6 mb-4">En esta simulación le pondremos una condición al circuito, el led solo encendera si el pulsador1 y el pulsador2 estan pulsados al mismo tiempo.</p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/VIDEO7_CIRCU7.mp4" type="video/mp4">
+                            </video></p></figure>
+                            
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados circuito 1</h2>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/RESULTADO1_CIRCU1.mp4" type="video/mp4">
+                        </video></p></figure>
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados circuito 2</h2>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/RESULTADO2_CIRCU2.mp4" type="video/mp4">
+                        </video></p></figure>
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados circuito 3</h2>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/RESULTADO3_CIRCU3.mp4" type="video/mp4">
+                        </video></p></figure>
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados circuito 4</h2>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/VIDEO4.1_CIRCU4.1.mp4" type="video/mp4">
+                        </video></p></figure>
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados circuito 5</h2>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/RESULTADO4_CIRCU4.mp4" type="video/mp4">
+                        </video></p></figure>
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados circuito 6</h2>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/RESULTADO5_CIRCU5.mp4" type="video/mp4">
+                        </video></p></figure>
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados circuito 7</h2>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/RESULTADO6_CRICU6.mp4" type="video/mp4">
+                        </video></p></figure>
+        
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">Esta práctica nos ayudo a mejorar nuestras habilidades para armar circuitos y tambien para identificar posibles errores en el código y en el circuito.</p>
+                        <p class="fs-6 mb-4">En el ultimo circuito nos percatamos que en las conexiones habia errores y aprendimos a no confiarnos en las simulaciones y analizar mas el circuito y aprender mas sobre los componentes que manejaremos en las prácticas.</p>
+                        
+
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
